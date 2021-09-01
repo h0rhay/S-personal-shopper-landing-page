@@ -32,3 +32,20 @@ By giving our sales assistants their own web page on Selfridges.com we can explo
   - Profile Socials
   - Profile contact email
   - Product List
+
+- Create repo
+- Create scope
+- Create GH Project
+- Create actionable tasks
+- Set up project build
+- Deploy to Gatsby cloud
+- Create sample MD profiles
+- Populate content from MD data
+- App layout template
+- Styling setup & typography
+- Header
+- Product grid
+- Profile details
+- Nav to switch profile
+- Responsive tidy up
+- Testing
