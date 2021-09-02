@@ -47,7 +47,7 @@ module.exports = {
           profiles: require.resolve("./src/templates/profile.js"),
           default: require.resolve("./src/components/layout.js"),
         },
-        gatsbyRemarkPlugins: [{ resolve: 'gatsby-plugin-image' }],
+        gatsbyRemarkPlugins: [{ resolve: 'gatsby-remark-images' }],
       },
     },
   ],
