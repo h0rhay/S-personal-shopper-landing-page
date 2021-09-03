@@ -15,9 +15,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     reporter.panic('Failed to create posts', result.errors);
   }
 
-  const profiles = result.data.allMdx.nodes;
+  const posts = result.data.allMdx.nodes;
 
-  profiles.forEach(profile => {
+  posts.forEach(profile => {
     actions.createPage({
       path: profile.frontmatter.slug,
       component: require.resolve('./src/templates/profile.js'),

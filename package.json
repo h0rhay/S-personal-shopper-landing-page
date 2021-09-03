@@ -1,34 +1,43 @@
 {
-  "name": "s-personal-shopper-landing-page",
-  "version": "1.0.0",
+  "name": "frontendmasters-gatsby",
   "private": true,
-  "description": "S-personal-shopper-landing-page",
-  "keywords": [
-    "gatsby"
-  ],
+  "description": "Bare-bones starter for the Gatsby Frontend Masters workshop.",
+  "version": "0.1.0",
+  "license": "MIT",
   "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
     "build": "gatsby build",
+    "develop": "cross-env GATSBY_GRAPHQL_IDE=playground gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
-    "@mdx-js/mdx": "^1.6.22",
-    "@mdx-js/react": "^1.6.22",
-    "gatsby": "^3.13.0",
-    "gatsby-plugin-gatsby-cloud": "^3.1.0",
-    "gatsby-plugin-image": "^1.13.0",
-    "gatsby-plugin-mdx": "^2.13.0",
-    "gatsby-plugin-page-creator": "^3.13.0",
-    "gatsby-plugin-react-helmet": "^4.13.0",
-    "gatsby-plugin-sharp": "^3.13.0",
-    "gatsby-plugin-sitemap": "^4.9.0",
-    "gatsby-remark-images": "^5.10.0",
-    "gatsby-source-filesystem": "^3.13.0",
-    "gatsby-transformer-sharp": "^3.13.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0"
+    "@emotion/core": "^10.0.22",
+    "@emotion/styled": "^10.0.23",
+    "@mdx-js/mdx": "^1.5.3",
+    "@mdx-js/react": "^1.5.3",
+    "gatsby": "^2.18.6",
+    "gatsby-background-image": "^0.9.12",
+    "gatsby-image": "^2.2.37",
+    "gatsby-plugin-emotion": "^4.1.16",
+    "gatsby-plugin-mdx": "^1.0.64",
+    "gatsby-plugin-react-helmet": "^3.1.16",
+    "gatsby-plugin-sharp": "^2.3.12",
+    "gatsby-remark-images": "^3.1.41",
+    "gatsby-source-filesystem": "^2.1.43",
+    "gatsby-source-instagram": "^0.6.1",
+    "gatsby-transformer-sharp": "^2.3.11",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1"
+  },
+  "devDependencies": {
+    "cross-env": "^6.0.3",
+    "prettier": "^1.19.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jlengstorf/frontendmasters-gatsby"
   }
 }
