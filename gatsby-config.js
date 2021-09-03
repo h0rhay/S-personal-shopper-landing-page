@@ -9,16 +9,6 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
-      resolve: 'gatsby-plugin-mdx',
-      options: {
-        defaultLayouts: {
-          default: require.resolve('./src/components/layout.js'),
-        },
-        gatsbyRemarkPlugins: [{ resolve: 'gatsby-remark-images' }],
-        plugins: [{ resolve: 'gatsby-remark-images' }],
-      },
-    },
-    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'profiles',
@@ -32,5 +22,14 @@ module.exports = {
         path: 'images',
       },
     },
-  ],
-};
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        defaultLayouts: {
+          default: require.resolve("./src/components/layout.js"),
+        },
+        gatsbyRemarkPlugins: [{ resolve: 'gatsby-remark-images' }],
+      },
+    },
+  ]
+}
