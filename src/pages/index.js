@@ -44,7 +44,6 @@ export default () => {
 
   return (
     <>
-      {console.log(profiles)}
       <ImageBackground Tag="section" fluid={image.sharp.fluid} fadeIn="soft">
         <TextBox>
           <h1>&hearts; Selfridges Personal Shopper &hearts;</h1>

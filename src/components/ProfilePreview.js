@@ -16,7 +16,6 @@ const ProfilePreview = ({ profile }) => (
       }
     `}
   >
-    {console.log('profile', profile)}
     <Link
       to={profile.slug}
       css={css`
