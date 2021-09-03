@@ -31,6 +31,5 @@ module.exports = {
         path: 'images',
       },
     },
-    `gatsby-plugin-no-index`,
   ],
 };
