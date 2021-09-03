@@ -1,7 +1,7 @@
 {
-  "name": "frontendmasters-gatsby",
+  "name": "selfridges-ps-gatsby",
   "private": true,
-  "description": "Bare-bones starter for the Gatsby Frontend Masters workshop.",
+  "description": "Bare-bones Gatsby starter for Selfridges personal shopper.",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
