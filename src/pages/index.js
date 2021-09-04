@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 import styled from '@emotion/styled';
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
 import BackgroundImage from 'gatsby-background-image';
 import ProfilePreview from '../components/ProfilePreview';
 import useProfiles from '../hooks/use-profiles';
