@@ -1,0 +1,28 @@
+backend:
+  name: git-gateway
+  branch: main
+publish_mode: editorial_workflow
+media_folder: "images/uploads"
+collections:
+  - name: "profiles" # Used in routes, e.g., /admin/collections/blog
+    label: "Profiles" # Used in the UI
+    folder: "/profiles" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Twitter", name: "twitter", widget: "string"}
+      - {label: "Instagram", name: "insta", widget: "string"}
+      - {label: "Facebook", name: "facebook", widget: "string"}
+      - {label: "Email", name: "email", widget: "string"}
+      - {label: "Profile Image", name: "profileImage", widget: "image"}
+      - {label: "Header Image", name: "headerImage", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Products"
+          name: "products"
+          widget: "list"
+          fields: 
+            - {label: "Product Name", name: "item", widget: "string"}
+            - {label: "Product Link", name: "link", widget: "string"}
+            - {label: "Product Image", name: "image", widget: "string"}}
