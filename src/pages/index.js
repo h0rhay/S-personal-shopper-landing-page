@@ -13,7 +13,6 @@ const ImageBackground = styled(BackgroundImage)`
 `;
 
 const TextBox = styled('div')`
-  
   display: flex;
   height: 100%;
   justify-content: center;

@@ -4,7 +4,7 @@ module.exports = {
     description: 'Amazing products selected for you',
   },
   plugins: [
-    'gatsby-plugin-emotion',
+    'gatsby-plugin-styled-components',
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
