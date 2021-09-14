@@ -1,7 +1,19 @@
 import React from 'react';
-import styled from '@emotion/styled';
-import { css } from '@emotion/core';
+import styled from 'styled-components';
 import { Link } from 'gatsby';
+
+const Header = styled.header`
+  background: #ffe256;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem calc((100vw - 640px - 0.5rem) / 2);
+  margin-top: 0;
+`
+
+const Nav = styled.nav`
+  margin-top: 0;
+`
 
 const NavLink = styled(Link)`
   color: #222;
@@ -21,27 +33,14 @@ const NavLink = styled(Link)`
   }
 `;
 
-const Header = () => (
-  <header
-    css={css`
-      background: #ffe256;
-      border-bottom: 1px solid #ddd;
-      display: flex;
-      justify-content: space-between;
-      padding: 0.5rem calc((100vw - 640px - 0.5rem) / 2);
-      margin-top: 0;
-    `}
-  >
-    <nav
-      css={css`
-        margin-top: 0;
-      `}
-    >
+const HeaderSection = () => (
+  <Header>
+    <Nav>
       <NavLink to="/" activeClassName="current-page">
         Home
       </NavLink>
-    </nav>
-  </header>
+    </Nav>
+  </Header>
 );
 
-export default Header;
+export default HeaderSection;
