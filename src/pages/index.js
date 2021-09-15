@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 import Layout from '../components/Layout';
 import BackgroundImage from 'gatsby-background-image';
 import ProfilePreview from '../components/ProfilePreview';
@@ -28,35 +28,32 @@ const TextBox = styled('div')`
 
 export default () => {
   const profiles = useProfiles();
-  const { image } = useStaticQuery(graphql`
-    query {
-      image: file(relativePath: { eq: "karine-germain-hello-gorgeous.jpg" }) {
-        sharp: childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-    }
-  `);
+  // const { image } = useStaticQuery(graphql`
+  //   query {
+  //     image: file(relativePath: { eq: "karine-germain-hello-gorgeous.jpg" }) {
+  //       sharp: childImageSharp {
+  //         fluid {
+  //           ...GatsbyImageSharpFluid_withWebp
+  //         }
+  //       }
+  //     }
+  //   }
+  // `);
   
 
   return (
     <>
-      <ImageBackground Tag="section" fluid={image.sharp.fluid} fadeIn="soft">
+      {/* <ImageBackground Tag="section" fluid={image.sharp.fluid} fadeIn="soft">
         <TextBox>
           <h1>&hearts; Selfridges Personal Shopper &hearts;</h1>
         </TextBox>
-      </ImageBackground>
+      </ImageBackground> */}
       <Layout>
         <h2>Selfridges personal shoppers</h2>
-        
-
         <h3>Profiles:</h3>
         {profiles.map(profile => (
           <ProfilePreview key={profile.slug} profile={profile} />
         ))}
-
       </Layout>
     </>
   );

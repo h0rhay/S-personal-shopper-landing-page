@@ -31,6 +31,14 @@ module.exports = {
         gatsbyRemarkPlugins: [{ resolve: 'gatsby-remark-images' }],
       },
     },
+    {
+      resolve: `gatsby-plugin-react-svg`,
+      options: {
+        rule: {
+          include: /images/,
+        }
+      }
+    },
     `gatsby-plugin-no-index`,
   ]
 }

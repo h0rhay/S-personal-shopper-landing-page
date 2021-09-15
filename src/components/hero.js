@@ -1,47 +1,43 @@
 import React from 'react';
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
+import SiteWidthWrapper from './siteWidthWrapper';
 
-const ImageBackground = styled(BackgroundImage)`
-  background-position: center center;
-  background-size: cover;
-  height: 50vh;
-  margin-top: 0;
-`;
+const HeroWrap = styled.article`
+  background: #eee;
+`
 
-const TextBox = styled('div')`
-  display: flex;
-  height: 100%;
-  justify-content: center;
-  align-items:center;
-  width: 100%;
-  margin-top: 0;
-  h1 {
-    color:white; 
-    font-size: 4vw;
-    text-shadow: 0 0 10px #333; 
-  }
-
-  p,
-  a {
-    color: #222;
-    margin-top: 0;
-  }
-
-  a {
-    margin-top: 0.5rem;
-  }
-`;
-
-const Hero = ({ image }) => {
-
+const Hero = () => {
   return (
-    <ImageBackground Tag="section" fluid={image} fadeIn="soft">
-      <TextBox>
-        <h1>&hearts; Selfridges Personal Shopper &hearts;</h1>
-      </TextBox>
-    </ImageBackground>
+    <HeroWrap>
+      <SiteWidthWrapper>
+        <section>
+        <img/>
+        <h2>Connie Surname</h2>
+        <h4>Personal Shopper - London</h4>
+        <p>About Connie</p>
+        <p>Lorem ipsum dolor sit amet, consec ctetur adipiscing elit. Proin enim ex, efficitur non lorem a, rutrum moeni tetur.</p>
+        <ul>
+          <li>
+            <a>
+              Link 1
+            </a>
+          </li>
+          <li>
+            <a>
+              Link 2
+            </a>
+          </li>
+          <li>
+            <a>
+              Link 3
+            </a>
+          </li>
+        </ul>
+        </section>
+      </SiteWidthWrapper>
+    </HeroWrap>
   );
 };
 

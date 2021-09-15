@@ -4,6 +4,7 @@ import Image from 'gatsby-image';
 import styled  from 'styled-components';
 import Layout from '../components/Layout';
 import Hero from '../components/hero';
+import SiteWidthWrapper from '../components/siteWidthWrapper';
 
 const TopSection = styled.section`
   display:flex;
@@ -91,35 +92,37 @@ export const query = graphql`
 
 const ProfileTemplate = ({ data: { mdx: profile } }) => (
   <>
-    <Hero image={profile.frontmatter.headerImage.childImageSharp.fluid}/>
     <Layout>
-      <h1>{profile.frontmatter.title}</h1>
-      <TopSection>
-        <Image
-          fluid={profile.frontmatter.profileImage.childImageSharp.fluid}
-          alt={profile.title}
-        />
-        <p>{profile.frontmatter.description}</p>
-      </TopSection>
-      <BottomSection>
-        <ul>
-          {profile.frontmatter.products && 
-            profile.frontmatter.products.map((product, i) => {
-              return (
-                <li>
-                  <a href={product.link}>
-                    <h3>{product.item}</h3>
-                    <img 
-                      src={product.image} 
-                      alt={product.item.toLowerCase()}
-                    />
-                  </a>
-                </li>
-              )
-            })
-          }
-        </ul>
-      </BottomSection>
+      <Hero/>
+      <SiteWidthWrapper>
+        <h1>{profile.frontmatter.title}</h1>
+        <TopSection>
+          <Image
+            fluid={profile.frontmatter.profileImage.childImageSharp.fluid}
+            alt={profile.title}
+            />
+          <p>{profile.frontmatter.description}</p>
+        </TopSection>
+        <BottomSection>
+          <ul>
+            {profile.frontmatter.products && 
+              profile.frontmatter.products.map((product, i) => {
+                return (
+                  <li>
+                    <a href={product.link}>
+                      <h3>{product.item}</h3>
+                      <img 
+                        src={product.image} 
+                        alt={product.item.toLowerCase()}
+                        />
+                    </a>
+                  </li>
+                )
+              })
+            }
+          </ul>
+        </BottomSection>
+      </SiteWidthWrapper>
     </Layout>
   </>
 );
