@@ -4,46 +4,13 @@ import Image from 'gatsby-image';
 import styled  from 'styled-components';
 import Layout from '../components/Layout';
 import Hero from '../components/hero';
+import ProductList from '../components/productList';
 import SiteWidthWrapper from '../components/siteWidthWrapper';
+import Footer from '../components/footer';
 
-const TopSection = styled.section`
-  display:flex;
-  .gatsby-image-wrapper {
-    width:100%;
-  }
-  img {
-    * {
-      margin-top: 0;
-    }
-  }
-  p {
-    max-width:40ch;
-    margin-left: 2rem;
-  }
-`
-
-const ProductList = styled.ul`
-  list-style-type:none;
-  margin:0;
-  padding:0;
-  display:flex;
-  flex:1;
-  li {
-    width:50%;
-    display:flex;
-    flex:1;
-    a {
-      width:100%;
-      display:flex;
-      align-items: center;
-      justify-content:center;
-      flex-direction:column;
-      text-decoration: none;
-      img {
-        max-width:8rem;
-      }
-    }
-  }
+const Heading = styled.section`
+  margin: 4rem 0;
+  text-align: center;
 `
 
 export const query = graphql`
@@ -93,29 +60,19 @@ const ProfileTemplate = ({ data: { mdx: profile } }) => (
     <Layout>
       <Hero 
         img={profile.frontmatter.profileImage.childImageSharp.fluid} 
-        alt={profile.title}
+        alt={profile.frontmatter.title}
         title={profile.frontmatter.title}
         description={profile.frontmatter.description}
       />
+      
       <SiteWidthWrapper>
-        <ProductList>
-          {profile.frontmatter.products && 
-            profile.frontmatter.products.map((product, i) => {
-              return (
-                <li>
-                  <a href={product.link}>
-                    <h3>{product.item}</h3>
-                    <img 
-                      src={product.image} 
-                      alt={product.item.toLowerCase()}
-                      />
-                  </a>
-                </li>
-              )
-            })
-          }
-        </ProductList>
+        <Heading>
+          <h2>{profile.frontmatter.title} Top Picks</h2>
+        </Heading>
+        <ProductList products={profile.frontmatter.products}/>
       </SiteWidthWrapper>
+      
+      <Footer />
     </Layout>
   </>
 );

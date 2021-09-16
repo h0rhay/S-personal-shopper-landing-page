@@ -1,12 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import Image from 'gatsby-image';
-import BackgroundImage from 'gatsby-background-image';
 import SiteWidthWrapper from './siteWidthWrapper';
-import DynamicImage from './dynamicImage';
 
 const HeroWrap = styled.article`
-  background: #eee;
+  background: var(--accent-color);
 `
 
 const HeroContent = styled.section`

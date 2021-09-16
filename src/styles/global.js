@@ -16,12 +16,14 @@ export const globalStyles = `
 
   :root {
     --primary-color: #ffe256;
+    --text-color: #212121;
+    --accent-color: #e7e7e7;
   }
 
   /* More info: https://bit.ly/2PsCnzk */
-  * + * {
-    margin-top: 1rem;
-  }
+  // * + * {
+  //   margin-top: 1rem;
+  // }
 
   html {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
@@ -31,7 +33,7 @@ export const globalStyles = `
   html,
   body {
     margin: 0;
-    color: #555;
+    color: var(--text-color);
     font-family: DINNextLTPro-Regular, Helvetica, Arial, sans-serif;
     line-height: 1.4;
 
