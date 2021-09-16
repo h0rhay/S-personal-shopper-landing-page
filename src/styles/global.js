@@ -54,7 +54,8 @@ export const globalStyles = `
     margin-top: 0.25rem;
   }
 
-  img, svg {
+  img, svg, .g-image {
+    height: 100%;
     width: 100%;
   }
 `

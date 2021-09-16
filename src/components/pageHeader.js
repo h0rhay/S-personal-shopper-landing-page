@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 
-import SelfridgesLogo from '../../images/selfridges_logo.svg'
+import SelfridgesLogo from '../images/selfridges_logo.svg'
 
 const Header = styled.header`
   height: 3.875rem;
