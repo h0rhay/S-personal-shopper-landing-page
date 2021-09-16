@@ -1,4 +1,14 @@
 export const globalStyles = `
+  @font-face {
+    font-family: "DINNextLTPro-Regular";
+    src: url("../fonts/DINNextLTPro-Regular.woff");
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "DINNextLTPro-Medium";
+    src: url("../fonts/DINNextLTPro-Medium.woff");
+    font-display: swap;
+  }
   * {
     box-sizing: border-box;
     margin: 0;
@@ -14,6 +24,7 @@ export const globalStyles = `
   }
 
   html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
     font-size:16px;
   }
 
@@ -21,9 +32,7 @@ export const globalStyles = `
   body {
     margin: 0;
     color: #555;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-      Helvetica, Arial, sans-serif, 'Apple Color Emoji',
-      'Segoe UI Emoji', 'Segoe UI Symbol';
+    font-family: DINNextLTPro-Regular, Helvetica, Arial, sans-serif;
     line-height: 1.4;
 
     /* remove margin for the main div that Gatsby mounts into */
@@ -38,6 +47,7 @@ export const globalStyles = `
   h4,
   h5,
   h6 {
+    font-family: DINNextLTPro-Medium, Helvetica, Arial, sans-serif;
     color: #222;
     line-height: 1.1;
 

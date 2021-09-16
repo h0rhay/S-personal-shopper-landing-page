@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link, graphql, useStaticQuery } from 'gatsby';
+import Image from 'gatsby-image';
 import BackgroundImage from 'gatsby-background-image';
 import SiteWidthWrapper from './siteWidthWrapper';
 import DynamicImage from './dynamicImage';
@@ -34,9 +34,12 @@ const ContactLinks = styled.ul`
     margin:0;
     padding:0;
   }
+  a {
+    font-weight:bold;
+  }
 `
 
-const ProfileImage = styled(DynamicImage)`
+const ProfileImage = styled(Image)`
   border-radius: 2.5rem;
   max-height:5rem;
   max-width:5rem;
@@ -48,18 +51,23 @@ const ProfileImage = styled(DynamicImage)`
 
 const Description = styled.p`
   text-align:center;
+  max-width: 50ch;
 `
 
-const Hero = () => {
+const Hero = ({ img, alt, title, description }) => {
   return (
     <HeroWrap>
       <SiteWidthWrapper>
         <HeroContent>
-          <ProfileImage src={`images/elle-woods.jpg`} className='foo' alt='profile-image'/>
-          <h2>Connie Surname</h2>
+          <ProfileImage
+            fluid={img}
+            alt={alt}
+            className='g-image'
+          />
+          <h2>{title}</h2>
           <h4>Personal Shopper - London</h4>
-          <p>About Connie</p>
-          <Description>Lorem ipsum dolor sit amet, consec ctetur adipiscing elit. Proin enim ex, efficitur non lorem a, rutrum moeni tetur.</Description>
+          <p>About {title}</p>
+          <Description>{description}</Description>
           <ContactLinks>
             <li>
               <a>

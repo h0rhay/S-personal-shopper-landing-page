@@ -22,27 +22,25 @@ const TopSection = styled.section`
   }
 `
 
-const BottomSection = styled.section`
-  ul {
-    list-style-type:none;
-    margin:0;
-    padding:0;
+const ProductList = styled.ul`
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  display:flex;
+  flex:1;
+  li {
+    width:50%;
     display:flex;
     flex:1;
-    li {
-      width:50%;
+    a {
+      width:100%;
       display:flex;
-      flex:1;
-      a {
-        width:100%;
-        display:flex;
-        align-items: center;
-        justify-content:center;
-        flex-direction:column;
-        text-decoration: none;
-        img {
-          max-width:8rem;
-        }
+      align-items: center;
+      justify-content:center;
+      flex-direction:column;
+      text-decoration: none;
+      img {
+        max-width:8rem;
       }
     }
   }
@@ -93,35 +91,30 @@ export const query = graphql`
 const ProfileTemplate = ({ data: { mdx: profile } }) => (
   <>
     <Layout>
-      <Hero/>
+      <Hero 
+        img={profile.frontmatter.profileImage.childImageSharp.fluid} 
+        alt={profile.title}
+        title={profile.frontmatter.title}
+        description={profile.frontmatter.description}
+      />
       <SiteWidthWrapper>
-        <h1>{profile.frontmatter.title}</h1>
-        <TopSection>
-          <Image
-            fluid={profile.frontmatter.profileImage.childImageSharp.fluid}
-            alt={profile.title}
-            />
-          <p>{profile.frontmatter.description}</p>
-        </TopSection>
-        <BottomSection>
-          <ul>
-            {profile.frontmatter.products && 
-              profile.frontmatter.products.map((product, i) => {
-                return (
-                  <li>
-                    <a href={product.link}>
-                      <h3>{product.item}</h3>
-                      <img 
-                        src={product.image} 
-                        alt={product.item.toLowerCase()}
-                        />
-                    </a>
-                  </li>
-                )
-              })
-            }
-          </ul>
-        </BottomSection>
+        <ProductList>
+          {profile.frontmatter.products && 
+            profile.frontmatter.products.map((product, i) => {
+              return (
+                <li>
+                  <a href={product.link}>
+                    <h3>{product.item}</h3>
+                    <img 
+                      src={product.image} 
+                      alt={product.item.toLowerCase()}
+                      />
+                  </a>
+                </li>
+              )
+            })
+          }
+        </ProductList>
       </SiteWidthWrapper>
     </Layout>
   </>
