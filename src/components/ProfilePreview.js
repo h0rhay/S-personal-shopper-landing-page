@@ -1,38 +1,31 @@
 import React from 'react';
-import { css } from '@emotion/core';
+import styled from 'styled-components';
 import { Link } from 'gatsby';
 import Image from 'gatsby-image';
 
-const ProfilePreview = ({ profile }) => (
-  <article
-    css={css`
-      border-bottom: 1px solid #eee;
-      margin-top: 0rem;
-      display: flex;
-      padding-bottom: 1rem;
+const Article = styled.article`
+  border-bottom: 1px solid #eee;
+  margin-top: 0rem;
+  display: flex;
+  padding-bottom: 1rem;
+  :first-of-type {
+    margin-top: 1rem;
+  }
+`
 
-      :first-of-type {
-        margin-top: 1rem;
-      }
-    `}
-  >
-    <Link
-      to={profile.slug}
-      css={css`
-        margin: 1rem 1rem 0 0;
-        width: 100px;
-      `}
-    >
+const ArticleLink = styled(Link)`
+  margin: 1rem 1rem 0 0;
+  width: 100px;
+`
+
+const ProfilePreview = ({ profile }) => (
+  <Article>
+    <ArticleLink to={profile.slug} >
       <Image
         fluid={profile.profileImage.childImageSharp.fluid}
-        css={css`
-          * {
-            margin-top: 0;
-          }
-        `}
         alt={profile.title}
       />
-    </Link>
+    </ArticleLink>
     <div>
       <h3>
         <Link to={profile.slug}>{profile.title}</Link>
@@ -40,7 +33,7 @@ const ProfilePreview = ({ profile }) => (
       <p>{profile.excerpt}</p>
       <Link to={profile.slug}>{profile.title} &rarr;</Link>
     </div>
-  </article>
+  </Article>
 );
 
 export default ProfilePreview;

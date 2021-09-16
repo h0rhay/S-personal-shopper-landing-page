@@ -4,7 +4,7 @@ module.exports = {
     description: 'Amazing products selected for you',
   },
   plugins: [
-    'gatsby-plugin-emotion',
+    'gatsby-plugin-styled-components',
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
@@ -16,10 +16,10 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: 'images',
-        path: 'images',
+        name: `images`,
+        path: `${__dirname}/src/images`,
       },
     },
     {
@@ -30,6 +30,14 @@ module.exports = {
         },
         gatsbyRemarkPlugins: [{ resolve: 'gatsby-remark-images' }],
       },
+    },
+    {
+      resolve: `gatsby-plugin-react-svg`,
+      options: {
+        rule: {
+          include: /images/,
+        }
+      }
     },
     `gatsby-plugin-no-index`,
   ]

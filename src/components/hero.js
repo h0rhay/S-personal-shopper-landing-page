@@ -1,47 +1,91 @@
 import React from 'react';
-import styled from '@emotion/styled';
-import { Link, graphql, useStaticQuery } from 'gatsby';
-import BackgroundImage from 'gatsby-background-image';
+import styled from 'styled-components';
+import Image from 'gatsby-image';
+import SiteWidthWrapper from './siteWidthWrapper';
 
-const ImageBackground = styled(BackgroundImage)`
-  background-position: center center;
-  background-size: cover;
-  height: 50vh;
-  margin-top: 0;
-`;
+const HeroWrap = styled.article`
+  background: var(--accent-color);
+`
 
-const TextBox = styled('div')`
-  display: flex;
-  height: 100%;
-  justify-content: center;
+const HeroContent = styled.section`
+  display:flex;
+  flex-direction: column;
+  justify-content:space-around;
   align-items:center;
-  width: 100%;
-  margin-top: 0;
-  h1 {
-    color:white; 
-    font-size: 4vw;
-    text-shadow: 0 0 10px #333; 
+  padding: 4rem 0;
+  * {
+    margin: 0;
+    padding:0;
   }
+  * ~ * {
+    margin-top:1rem;
+  }
+`
 
-  p,
+const ContactLinks = styled.ul`
+  padding:0;
+  list-style-type:none;
+  display:flex;
+  justify-content:space-between;
+  width:20ch;
+  * {
+    margin:0;
+    padding:0;
+  }
   a {
-    color: #222;
-    margin-top: 0;
+    font-weight:bold;
   }
+`
 
-  a {
-    margin-top: 0.5rem;
+const ProfileImage = styled(Image)`
+  border-radius: 2.5rem;
+  max-height:5rem;
+  max-width:5rem;
+  margin:0;
+  * {
+    margin:0;
   }
-`;
+`
 
-const Hero = ({ image }) => {
+const Description = styled.p`
+  text-align:center;
+  max-width: 50ch;
+`
 
+const Hero = ({ img, alt, title, description }) => {
   return (
-    <ImageBackground Tag="section" fluid={image} fadeIn="soft">
-      <TextBox>
-        <h1>&hearts; Selfridges Personal Shopper &hearts;</h1>
-      </TextBox>
-    </ImageBackground>
+    <HeroWrap>
+      <SiteWidthWrapper>
+        <HeroContent>
+          <ProfileImage
+            fluid={img}
+            alt={alt}
+            className='g-image'
+          />
+          <h2>{title}</h2>
+          <h4>Personal Shopper - London</h4>
+          <p>About {title}</p>
+          <Description>{description}</Description>
+          <ContactLinks>
+            <li>
+              <a>
+                Link 1
+              </a>
+            </li>
+            <li>
+              <a>
+                Link 2
+              </a>
+            </li>
+            <li>
+              <a>
+                Link 3
+              </a>
+            </li>
+          </ContactLinks>
+        </HeroContent>
+      </SiteWidthWrapper>
+    </HeroWrap>
   );
 };
 
