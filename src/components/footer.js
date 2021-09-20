@@ -6,7 +6,7 @@ const PageFooter = styled.footer`
     background: var(--accent-color);
     margin-top: 4rem;
     padding: 2rem 0;
-`
+`;
 
 const Footer = () => (
     <PageFooter>
@@ -14,6 +14,6 @@ const Footer = () => (
             <h4>Footer</h4>
         </SiteWidthWrapper>
     </PageFooter>
-)
+);
 
-export default Footer
+export default Footer;
