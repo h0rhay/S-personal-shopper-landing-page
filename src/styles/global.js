@@ -70,4 +70,4 @@ export const globalStyles = `
     height: 100%;
     width: 100%;
   }
-`
+`;
