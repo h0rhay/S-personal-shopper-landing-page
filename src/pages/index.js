@@ -54,6 +54,7 @@ export default () => {
         {profiles.map(profile => (
           <ProfilePreview key={profile.slug} profile={profile} />
         ))}
+        {console.log('ffs'}
       </Layout>
     </>
   );
