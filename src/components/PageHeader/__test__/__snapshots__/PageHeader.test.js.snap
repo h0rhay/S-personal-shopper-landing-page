@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Page Header should match screenshot 1`] = `
+<div>
+  <header
+    class="sc-gsDKAQ eWeztX"
+  >
+    <div
+      class="sc-bdvvtL kiJDep site_width_wrap"
+    >
+      <nav
+        class="sc-hKwDye ihRzwE"
+      >
+        <a
+          class="sc-gKclnd kpKMdZ"
+          data-testid="selfridges-logo-link"
+          href="https://www.selfridges.com/"
+          rel="noopener noreferrer"
+          target="_blank"
+          title="Selfridges & Co"
+        >
+          <test-file-stub
+            classname="sc-dkPtRN fFrQVd"
+          />
+          <span>
+            Selfridges & Co
+          </span>
+        </a>
+        <div
+          class="sc-eCImPb cgYwop"
+        >
+          <a
+            class="sc-jRQBWg gqQVrW"
+            data-testid="contact-me-link"
+            href="mailto:test@test.co.uk?subject=Personal Shopping Appointment"
+            target="_blank"
+          >
+            Contact Me
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+</div>
+`;

@@ -1,0 +1,149 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`More Shopper Desktop should match screenshot 1`] = `
+<div>
+  <section
+    class="sc-pVTFL grKCCR"
+  >
+    <div
+      class="sc-jrQzAO hznhpi"
+    >
+      <div
+        class="sc-hKwDye fkoMWK"
+      >
+        <div
+          class="sc-bdvvtL bdzgBJ"
+          style="animation-duration: 400ms; animation-delay: 200ms;"
+        >
+          <a
+            class="sc-eCImPb bfyOOk"
+            href="/maggie-zhang"
+          >
+            <div
+              class="sc-gsDKAQ bwQhCI sc-dkPtRN iAbveQ"
+              dir="shopper"
+            >
+              <img
+                alt="Maggie Zhang"
+                class="sc-jRQBWg kQUKKv"
+                src="/static/16c6b0cde448182567d7222df64ed12c/f05ac/maggie-zhang.jpg"
+                srcset="/static/16c6b0cde448182567d7222df64ed12c/00333/maggie-zhang.jpg 200w,
+/static/16c6b0cde448182567d7222df64ed12c/c2a2a/maggie-zhang.jpg 400w,
+/static/16c6b0cde448182567d7222df64ed12c/f05ac/maggie-zhang.jpg 600w"
+              />
+            </div>
+            <p
+              class="sc-gKclnd dhKRsh"
+            >
+              Womens Fashion Specialist
+            </p>
+            <h2>
+              Maggie
+            </h2>
+            <h2
+              class="sc-iCfMLu cxkPBJ"
+            >
+              Zhang
+            </h2>
+            <div
+              class="sc-furwcr ghnaZL"
+            >
+              Personal shopper
+            </div>
+          </a>
+        </div>
+      </div>
+      <div
+        class="sc-hKwDye fkoMWK"
+      >
+        <div
+          class="sc-bdvvtL bdzgBJ"
+          style="animation-duration: 400ms; animation-delay: 400ms;"
+        >
+          <a
+            class="sc-eCImPb bfyOOk"
+            href="/sunny-kaur"
+          >
+            <div
+              class="sc-gsDKAQ bwQhCI sc-dkPtRN iAbveQ"
+              dir="shopper"
+            >
+              <img
+                alt="Sunny Kaur"
+                class="sc-jRQBWg kQUKKv"
+                src="/static/51ee4812c8eb64e8058f0e68115f2f35/f05ac/sunny-kaur.jpg"
+                srcset="/static/51ee4812c8eb64e8058f0e68115f2f35/00333/sunny-kaur.jpg 200w,
+/static/51ee4812c8eb64e8058f0e68115f2f35/c2a2a/sunny-kaur.jpg 400w,
+/static/51ee4812c8eb64e8058f0e68115f2f35/f05ac/sunny-kaur.jpg 600w"
+              />
+            </div>
+            <p
+              class="sc-gKclnd dhKRsh"
+            >
+              Womens Fashion Specialist
+            </p>
+            <h2>
+              Sunny
+            </h2>
+            <h2
+              class="sc-iCfMLu cxkPBJ"
+            >
+              Kaur
+            </h2>
+            <div
+              class="sc-furwcr ghnaZL"
+            >
+              Personal shopper
+            </div>
+          </a>
+        </div>
+      </div>
+      <div
+        class="sc-hKwDye fkoMWK"
+      >
+        <div
+          class="sc-bdvvtL bdzgBJ"
+          style="animation-duration: 400ms; animation-delay: 600ms;"
+        >
+          <a
+            class="sc-eCImPb bfyOOk"
+            href="/dawei-hou"
+          >
+            <div
+              class="sc-gsDKAQ bwQhCI sc-dkPtRN iAbveQ"
+              dir="shopper"
+            >
+              <img
+                alt="Dawei Hou"
+                class="sc-jRQBWg kQUKKv"
+                src="/static/5e76f59ac6093b90b7e7336b542a52ad/f05ac/dawei-hou.jpg"
+                srcset="/static/5e76f59ac6093b90b7e7336b542a52ad/00333/dawei-hou.jpg 200w,
+/static/5e76f59ac6093b90b7e7336b542a52ad/c2a2a/dawei-hou.jpg 400w,
+/static/5e76f59ac6093b90b7e7336b542a52ad/f05ac/dawei-hou.jpg 600w"
+              />
+            </div>
+            <p
+              class="sc-gKclnd dhKRsh"
+            >
+              Fashion Specialist
+            </p>
+            <h2>
+              Dawei
+            </h2>
+            <h2
+              class="sc-iCfMLu cxkPBJ"
+            >
+              Hou
+            </h2>
+            <div
+              class="sc-furwcr ghnaZL"
+            >
+              Personal shopper
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;

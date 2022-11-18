@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`404 - Error page should match screenshot 1`] = `
+<div>
+  <div
+    class="sc-bdvvtL kicZDN"
+  >
+    <a
+      class="sc-gsDKAQ"
+      href="https://www.selfridges.com/"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <test-file-stub
+        classname="sc-dkPtRN fFrQVd"
+      />
+    </a>
+    <h1
+      class="sc-hKwDye gDhSfz"
+    >
+      404
+    </h1>
+    <p
+      class="sc-eCImPb EPUDe"
+    >
+      Sorry, the page you requested does not exist.
+    </p>
+  </div>
+</div>
+`;

@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BoxImg component should match screenshot 1`] = `
+<div>
+  <div
+    class="sc-bdvvtL ldnvIA"
+    dir="right"
+  />
+</div>
+`;

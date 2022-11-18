@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductImage component should match screenshot 1`] = `
+<div>
+  <img
+    alt="Concert wool midi dress"
+    class="sc-bdvvtL bFuHx"
+    loading="lazy"
+    src="https://images.selfridges.com/is/image/selfridges/R03806044_CREAM_ALT01?$PDP_M_ZOOM$"
+  />
+</div>
+`;

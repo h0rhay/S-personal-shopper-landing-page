@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer should match screenshot 1`] = `
+<div>
+  <footer
+    class="sc-gsDKAQ eYhrHw"
+  >
+    <div
+      class="sc-bdvvtL kiJDep site_width_wrap"
+    >
+      <div
+        class="sc-hKwDye xtTyt"
+      >
+        <a
+          class="sc-gKclnd kpKMdZ"
+          data-testid="selfridges-footer-logo"
+          href="https://www.selfridges.com/"
+          rel="noopener noreferrer"
+          target="_blank"
+          title="Selfridges & Co"
+        >
+          <test-file-stub
+            classname="sc-dkPtRN imBqKc"
+          />
+          <span>
+            Selfridges & Co
+          </span>
+        </a>
+        <ul
+          class="sc-eCImPb egwiBT"
+        >
+          <li>
+            <a
+              class="sc-jRQBWg cgTkOP"
+              href="https://www.selfridges.com/GB/en/features/info/accessibility"
+            >
+              ACCESSIBILITY
+            </a>
+          </li>
+          <li>
+            <a
+              class="sc-jRQBWg cgTkOP"
+              href="https://www.selfridges.com/GB/en/features/info/our-corporate-policies/privacy-cookie-policy"
+            >
+              PRIVACY & COOKIES POLICIES
+            </a>
+          </li>
+          <li>
+            <a
+              class="sc-jRQBWg cgTkOP"
+              href="https://www.selfridges.com/GB/en/features/info/terms-conditions"
+            >
+              TERMS & CONDITIONS
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</div>
+`;

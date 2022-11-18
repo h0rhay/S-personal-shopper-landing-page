@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal component Close button should be in document: CLOSE BUTTON 1`] = `
+<button
+  class="sc-dkPtRN fcQwMD"
+  data-testid="close-button"
+  type="button"
+>
+  <test-file-stub />
+</button>
+`;
+
+exports[`Modal component Mock Child component should be in document: MODAL CHILDREN COMPONENT 1`] = `
+<div>
+  Modal Child Component
+</div>
+`;

@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Share component Should match screenshot 1`] = `
+<div>
+  <div>
+    <button
+      class="sc-bdvvtL kOTLLx"
+      role="button"
+      type="button"
+    >
+      <div>
+        <test-file-stub />
+        <div>
+          SHARE
+        </div>
+      </div>
+    </button>
+    <div />
+  </div>
+</div>
+`;

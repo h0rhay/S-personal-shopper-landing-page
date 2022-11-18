@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hero component should match screenshot 1`] = `
+<div>
+  <section
+    class="sc-iqseJM hfJlyu"
+  >
+    <div
+      class="sc-bdvvtL kiJDep site_width_wrap"
+    >
+      <section
+        class="sc-crHmcD eWCvJa"
+      >
+        <div
+          class="sc-egiyK fgzLxT"
+        >
+          <div
+            class="sc-kDTinF gXVNPH sc-bqiRlB"
+            style="animation-duration: 500ms; animation-delay: 300ms;"
+          >
+            <h1
+              class="sc-ksdxgE hECOEn"
+            >
+              Connie
+            </h1>
+          </div>
+          <div
+            class="sc-kDTinF gXVNPH sc-bqiRlB"
+            style="animation-duration: 500ms; animation-delay: 500ms;"
+          >
+            <h1
+              class="sc-hBUSln hrDda"
+            >
+              Jones
+            </h1>
+          </div>
+        </div>
+        <div
+          class="sc-bkkeKt dFLuun"
+        >
+          <div
+            class="sc-fFeiMQ dxQYBc   "
+            data-testid="hero-image-component"
+          >
+            <p
+              class="sc-dJjYzT eODQoZ"
+            >
+              Personal shopper Manchester
+            </p>
+            <p
+              class="sc-hGPBjI kzKEaQ"
+            />
+            <img
+              alt="Connie Jones"
+              class="sc-fotOHu eabLks g-image "
+              src="/static/b991240d56e4b1cff4fc035662ba8b36/6e63d/connie-profile-img.jpg"
+              srcset="/static/e97b0bd1cdb49dc6febfe800eec9b70b/fd013/arron-dickinson.jpg 200w, /static/e97b0bd1cdb49dc6febfe800eec9b70b/25252/arron-dickinson.jpg 400w, /static/e97b0bd1cdb49dc6febfe800eec9b70b/c3638/arron-dickinson.jpg 600w"
+            />
+          </div>
+        </div>
+        <div
+          class="sc-dlVxhl bjFunT"
+        >
+          <div>
+            <div>
+              <div
+                class="sc-ieecCq gtKUQI"
+              />
+            </div>
+            <div>
+              <h2 />
+              <p />
+            </div>
+          </div>
+          <div>
+            <button
+              class="sc-gsDKAQ iFgTIM"
+              role="button"
+              type="button"
+            >
+              <div>
+                <test-file-stub />
+                <div>
+                  SHARE
+                </div>
+              </div>
+            </button>
+            <div />
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+</div>
+`;

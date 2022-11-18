@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Shopper should match screenshot 1`] = `
+<div>
+  <div
+    class="sc-hKwDye fkoMWK"
+  >
+    <div
+      class="sc-bdvvtL bdzgBJ"
+      style="animation-duration: 400ms; animation-delay: 200ms;"
+    >
+      <a
+        class="sc-eCImPb bfyOOk"
+        href="/test"
+      >
+        <div
+          class="sc-gsDKAQ bwQhCI sc-dkPtRN iAbveQ"
+          dir="shopper"
+        >
+          <img
+            alt="testFirstName testLastName"
+            class="sc-jRQBWg kQUKKv"
+            src="/static/b991240d56e4b1cff4fc035662ba8b36/6e63d/connie-profile-img.jpg"
+            srcset="/static/e97b0bd1cdb49dc6febfe800eec9b70b/fd013/arron-dickinson.jpg 200w, /static/e97b0bd1cdb49dc6febfe800eec9b70b/25252/arron-dickinson.jpg 400w, /static/e97b0bd1cdb49dc6febfe800eec9b70b/c3638/arron-dickinson.jpg 600w"
+          />
+        </div>
+        <p
+          class="sc-gKclnd dhKRsh"
+        >
+          Test Expertise
+        </p>
+        <h2>
+          testFirstName
+        </h2>
+        <h2
+          class="sc-iCfMLu cxkPBJ"
+        >
+          testLastName
+        </h2>
+        <div
+          class="sc-furwcr ghnaZL"
+        >
+          Test Title
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+`;

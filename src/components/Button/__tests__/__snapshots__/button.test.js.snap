@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component with "href" provided should match screenshot 1`] = `
+<div>
+  <div
+    class="sc-bdvvtL gGhPvv"
+  >
+    <a
+      href="https://www.selfridges.com/GB/en/cat/zimmermann-concert-wool-midi-dress_R03806044/?previewAttribute=CREAM&utm_source=clientelling&utm_medium=referral&utm_campaign=325565_clientellingmicrosite_na_na_na_na&utm_term=na&utm_content=na&POR=Y"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Shop now
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Button component with "onClick" provided should match screenshot 1`] = `
+<div>
+  <div
+    class="sc-bdvvtL gGhPvv"
+  >
+    <button
+      type="button"
+    >
+      Shop now
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Button component with "to" provided should match screenshot 1`] = `
+<div>
+  <div
+    class="sc-bdvvtL gGhPvv"
+  >
+    <a
+      href="/shop"
+    >
+      Shop now
+    </a>
+  </div>
+</div>
+`;

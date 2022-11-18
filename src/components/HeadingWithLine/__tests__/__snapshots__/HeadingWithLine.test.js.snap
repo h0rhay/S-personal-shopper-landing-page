@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeadingWithLine component should match screenshot 1`] = `
+<div>
+  <h1
+    class="sc-bdvvtL eUeKFG"
+    color="tomato"
+  >
+    This is a heading with a line
+  </h1>
+</div>
+`;

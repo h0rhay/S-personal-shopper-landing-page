@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SiteWidthWrapper component should match screenshot 1`] = `
+<div>
+  <div
+    class="sc-bdvvtL kiJDep site_width_wrap"
+  >
+    <div>
+      test
+    </div>
+  </div>
+</div>
+`;

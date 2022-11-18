@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cookie consent banner should match screenshot 1`] = `
+<div>
+  <section
+    class="sc-dkPtRN jhSkRV"
+  >
+    <div
+      class="sc-bdvvtL kiJDep sc-hKwDye gPrQbD"
+    >
+      <h3>
+        Giving you the best experience
+      </h3>
+    </div>
+    <div
+      class="sc-bdvvtL kiJDep sc-eCImPb fUYyNN"
+    >
+      <div
+        class="ck-info"
+      >
+        <p>
+          We use cookies to personalize content and analyze our traffic. These cookies and similar technologies help to personalise content and analyse website performance. Learn exactly how we do this in our
+           
+          <a
+            href="https://www.selfridges.com/features/info/our-corporate-policies/privacy-cookie-policy"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Cookie Policy
+          </a>
+        </p>
+      </div>
+      <div
+        class="ck-btn"
+      >
+        <div
+          class="sc-gsDKAQ ighmbi"
+        >
+          <button
+            type="button"
+          >
+            No thanks
+          </button>
+        </div>
+      </div>
+      <div
+        class="ck-btn accept"
+      >
+        <div
+          class="sc-gsDKAQ ighmbi"
+        >
+          <button
+            type="button"
+          >
+            Accept
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;
